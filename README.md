@@ -1,31 +1,40 @@
 # Raji Muhammed Robiu
 
-**AI / LLM Engineer** — computational linguistics background, security-certified, free-tier-first by design.
+Computational linguist turned LLM systems engineer — I build free-tier-first, failure-aware routing and agent systems that stay reliable when individual providers don't.
 
-I build LLM routing and agent systems that treat cost, failure modes, and input validation as first-class constraints — not afterthoughts. My focus is making inference reliable when individual providers fail or rate-limit.
+**B.A. Linguistics** (Computational Linguistics concentration, AI thesis) · **Fortinet NSE 1–3** · **Cisco CyberOps**
 
-## Background
+## What I build
 
-- **B.A. Linguistics**, concentration in Computational Linguistics; undergraduate thesis on AI
-- **Certifications:** Fortinet NSE 1–3, Cisco CyberOps Associate
-- **Focus:** multi-provider LLM routing, agent harnesses with role-based tool restrictions, eval harnesses, data pipelines (SQLite → LLM judge)
+I'm strongest at the intersection of language understanding and practical LLM infrastructure:
 
-## What I've built
+- **Multi-provider routing and failover** — keeping inference alive when free-tier providers rate-limit or go down
+- **Cost and quota control** — routing away from exhausted tiers before the 429 hits
+- **Agent reliability** — role-based tool restrictions, adversarial verification gates, structured event logging
+- **Evaluation with linguistic rigor** — pre-registered protocols, labeled ground truth, honest failure analysis
 
-| Project | What it is | Stack |
+## Projects
+
+| | | |
 |---|---|---|
-| [flippy](https://github.com/Rawbeew/flippy) | Multi-provider LLM failover router + agent harness (Loomweaver). Semantic cache, quota-aware routing, key rotation, 147 tests. | Python stdlib |
-| [dont-get-rekt](https://github.com/Rawbeew/dont-get-rekt) | Crypto signal engine: multi-chain ingestion → SQLite → LLM judge → paper trades. 30-day pre-registered evaluation running. | Python, SQLite |
-| [verysketchy.lol](https://verysketchy.lol) | Memecoin exposure auction — on-chain payments across 4 chains, instant verification. | Cloudflare Workers |
-| [just-hired](https://github.com/Rawbeew/just-hired) | Job ingestion pipeline: Worker cron → SQLite dedup → last-12h board + ATS resume builder. | Cloudflare Workers, Netlify |
+| [flippy](https://github.com/Rawbeew/flippy) | Multi-provider LLM failover router + Loomweaver agent harness. Semantic cache, quota-aware routing, key rotation. 147 tests. | Python stdlib |
+| [dont-get-rekt](https://github.com/Rawbeew/dont-get-rekt) | Crypto signal engine: ingestion → SQLite → LLM judge → paper trades. 30-day pre-registered evaluation running. | Python, SQLite |
+| [verysketchy.lol](https://verysketchy.lol) | Memecoin exposure auction — on-chain payments (SOL/ETH/Base/MON), instant verification. | Cloudflare Workers |
+| [just-hired](https://github.com/Rawbeew/just-hired) | Job ingestion: Worker cron → SQLite dedup → last-12h board + ATS resume builder. | Cloudflare Workers, Netlify |
 
-## How I work
+## How I work differently
 
-- **Stdlib-first:** the router core has zero pip dependencies. If it needs a framework to work, I redesign.
-- **Pre-registered evaluations:** success criteria committed before results are known (see dont-get-rekt's EVAL_PROTOCOL.md)
-- **Failure injection testing:** 429s, timeouts, malformed responses, cascading failures — not just happy-path mocks
-- **Security threat modeling:** SSRF guards, path jails, env stripping, key redaction (see flippy SECURITY.md)
+Most people treat LLMs as black-box APIs. Most NLP people don't ship reliable infrastructure. I sit in the middle.
 
-## Currently
+- The router core in flippy has **zero pip dependencies** — if it needs a framework to work, I redesign
+- dont-get-rekt's evaluation protocol commits success criteria **before results are known**
+- Every agent action is logged to replayable JSONL traces; tool restrictions are enforced at dispatch, not suggested in prompts
+- I write post-mortems for bugs I find ([POSTMORTEMS.md](https://github.com/Rawbeew/flippy/blob/master/POSTMORTEMS.md))
 
-Running a 30-day paper-trading evaluation for dont-get-rekt. Building benchmarks for flippy. Looking for AI Engineer / LLM Infrastructure roles (remote).
+## Looking for
+
+AI Engineer / LLM Infrastructure / Applied AI roles (remote). Teams that are cost-conscious, still building their LLM stack, and need someone who actually understands language — not just API calls.
+
+---
+
+[LLM.txt](https://raw.githubusercontent.com/Rawbeew/portfolio/master/LLM.txt) available for AI crawlers.
