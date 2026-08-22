@@ -6,7 +6,7 @@ Computational linguist turned LLM systems engineer — I build free-tier-first, 
 
 ## LLM Systems
 
-- [flippy](https://github.com/Rawbeew/flippy) — Multi-provider LLM failover router + agent harness. Semantic cache (TF-IDF cosine), quota-aware routing with exponential cooldown, multi-key rotation, failure-injection tests. Stdlib-only core. 147 tests.
+- [flippy](https://github.com/Rawbeew/flippy) — Multi-provider LLM failover router + agent harness (Loomweaver). Semantic cache (TF-IDF cosine), quota-aware routing with exponential cooldown, multi-key rotation, failure-injection tests. Stdlib-only core. 147 tests.
 - [dont-get-rekt](https://github.com/Rawbeew/dont-get-rekt) — Crypto signal engine: multi-chain ingestion (Dexscreener/ccxt) → SQLite → LLM judge → paper trades. 30-day pre-registered evaluation running.
 - [verysketchy.lol](https://verysketchy.lol) — Memecoin exposure auction on Cloudflare Workers. On-chain payment verification across Solana/Ethereum/Base/Monad.
 - [just-hired](https://github.com/Rawbeew/just-hired) — Job ingestion: Cloudflare Worker cron → content-hash dedup → last-12h board + ATS resume builder.
@@ -19,6 +19,7 @@ Computational linguist turned LLM systems engineer — I build free-tier-first, 
 | Deployment | Docker, Cloudflare Workers, Netlify, GitHub Actions CI |
 | Data | SQLite (schema design, indexed queries, FK constraints) |
 | Security | SSRF guards, path jails, env stripping, key redaction, input validation |
+| Networking | Tailscale, WireGuard (basic), SSH |
 
 ## How I work differently
 
