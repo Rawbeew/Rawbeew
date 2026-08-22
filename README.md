@@ -1,40 +1,46 @@
 # Raji Muhammed Robiu
 
-Computational linguist turned LLM systems engineer — I build free-tier-first, failure-aware routing and agent systems that stay reliable when individual providers don't.
+Computational linguist turned LLM systems & infrastructure engineer — I build free-tier-first, failure-aware routing and agent systems that stay reliable when individual providers don't.
 
-**B.A. Linguistics** (syntax, HCI, and Computational Linguistics focus; AI thesis) · **Fortinet NSE 1–3** · **Cisco CyberOps**
+**B.A. Linguistics** (syntax, HCI, Computational Linguistics; AI thesis) · **Fortinet NSE 1–3** · **Cisco CyberOps**
 
-## What I build
+## Infrastructure I run
 
-I'm strongest at the intersection of language understanding and practical LLM infrastructure:
+Ansible-provisioned VPS (30-min full stack on any cloud): Nginx reverse proxy, PostgreSQL, MariaDB, Redis, Docker containers, Prometheus/Grafana monitoring, fail2ban, WireGuard VPN, automated backups. Self-hosted: Vaultwarden, Firefly III, Searx, Focalboard, Monica CRM.
 
-- **Multi-provider routing and failover** — keeping inference alive when free-tier providers rate-limit or go down
-- **Cost and quota control** — routing away from exhausted tiers before the 429 hits
-- **Agent reliability** — role-based tool restrictions, adversarial verification gates, structured event logging
-- **Evaluation with linguistic rigor** — pre-registered protocols, labeled ground truth, honest failure analysis
+## LLM Systems
 
-## Projects
+- [flippy](https://github.com/Rawbeew/flippy) — Multi-provider LLM failover router + Loomweaver agent harness. Semantic cache (TF-IDF cosine), quota-aware routing with exponential cooldown, multi-key rotation, hedged requests. Stdlib-only core. 147 tests including failure injection.
+- [dont-get-rekt](https://github.com/Rawbeew/dont-get-rekt) — Crypto signal engine: multi-chain ingestion (Dexscreener/ccxt, 90+ chains) → SQLite → LLM judge → paper trades. 30-day pre-registered evaluation running.
+- [verysketchy.lol](https://verysketchy.lol) — Memecoin exposure auction on Cloudflare Workers. On-chain payment verification across Solana/Ethereum/Base/Monad.
+- [just-hired](https://github.com/Rawbeew/just-hired) — Job ingestion pipeline: Cloudflare Worker cron → content-hash dedup → last-12h board + ATS resume builder.
 
-| | | |
-|---|---|---|
-| [flippy](https://github.com/Rawbeew/flippy) | Multi-provider LLM failover router + Loomweaver agent harness. Semantic cache, quota-aware routing, key rotation. 147 tests. | Python stdlib |
-| [dont-get-rekt](https://github.com/Rawbeew/dont-get-rekt) | Crypto signal engine: ingestion → SQLite → LLM judge → paper trades. 30-day pre-registered evaluation running. | Python, SQLite |
-| [verysketchy.lol](https://verysketchy.lol) | Memecoin exposure auction — on-chain payments (SOL/ETH/Base/MON), instant verification. | Cloudflare Workers |
-| [just-hired](https://github.com/Rawbeew/just-hired) | Job ingestion: Worker cron → SQLite dedup → last-12h board + ATS resume builder. | Cloudflare Workers, Netlify |
+## Full Stack
+
+| Layer | Technologies |
+|---|---|
+| **Languages** | Python, Bash/Shell, SQL, JavaScript |
+| **Infrastructure** | Ansible, Docker, Vagrant, Nginx, WireGuard |
+| **Databases** | PostgreSQL, MariaDB, Redis, SQLite |
+| **Monitoring** | Prometheus, Grafana, Alertmanager |
+| **LLM Providers** | OpenRouter, Groq, NVIDIA NIM, Cloudflare Workers AI, freeinference.org |
+| **Deployment** | Cloudflare Workers, Netlify, Docker Compose, GH Actions CI |
+| **Security** | fail2ban, WireGuard, Blocky DNS, SSRF guards, path jails, key rotation |
 
 ## How I work differently
 
-Most people treat LLMs as black-box APIs. Most NLP people don't ship reliable infrastructure. I sit in the middle.
+Most people treat LLMs as black-box APIs. Most infra people don't understand language models. Most NLP people don't provision servers. I sit at the intersection.
 
-- The router core in flippy has **zero pip dependencies** — if it needs a framework to work, I redesign
-- dont-get-rekt's evaluation protocol commits success criteria **before results are known**
-- Every agent action is logged to replayable JSONL traces; tool restrictions are enforced at dispatch, not suggested in prompts
-- I write post-mortems for bugs I find ([POSTMORTEMS.md](https://github.com/Rawbeew/flippy/blob/master/POSTMORTEMS.md))
+- Router core has **zero pip dependencies** — if it needs a framework to work, I redesign
+- Evaluation protocols commit success criteria **before results are known**
+- Agent tool restrictions enforced at dispatch, not suggested in prompts
+- Post-mortems written for real bugs found ([POSTMORTEMS.md](https://github.com/Rawbeew/flippy/blob/master/POSTMORTEMS.md))
+- $0 infrastructure cost by design
 
 ## Looking for
 
-AI Engineer / LLM Infrastructure / Applied AI roles (remote). Teams that are cost-conscious, still building their LLM stack, and need someone who actually understands language — not just API calls.
+AI Engineer / LLM Infrastructure / MLOps / Backend Engineer with AI focus (remote). Teams building their LLM stack that also need someone who can provision the servers it runs on.
 
 ---
 
-[LLM.txt](https://raw.githubusercontent.com/Rawbeew/portfolio/master/LLM.txt) available for AI crawlers.
+[LLM.txt](https://raw.githubusercontent.com/Rawbeew/portfolio/master/LLM.txt)
