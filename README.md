@@ -2,7 +2,7 @@
 
 Computational linguist turned LLM systems engineer — I build free-tier-first, failure-aware routing and agent systems that stay reliable when individual providers don't.
 
-**B.A. Linguistics** (Computational Linguistics concentration, AI thesis) · **Fortinet NSE 1–3** · **Cisco CyberOps**
+**B.A. Linguistics** (syntax, HCI, and Computational Linguistics focus; AI thesis) · **Fortinet NSE 1–3** · **Cisco CyberOps**
 
 ## What I build
 
