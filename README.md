@@ -6,10 +6,10 @@ Computational linguist turned LLM systems engineer — I build free-tier-first, 
 
 ## LLM Systems
 
-- [flippy](https://github.com/Rawbeew/flippy) — Multi-provider LLM failover router + agent harness (Loomweaver). Semantic cache (TF-IDF cosine), quota-aware routing with exponential cooldown, multi-key rotation, failure-injection tests. Stdlib-only core. 147 tests.
-- [dont-get-rekt](https://github.com/Rawbeew/dont-get-rekt) — Crypto signal engine: multi-chain ingestion (Dexscreener/ccxt) → SQLite → LLM judge → paper trades. 30-day pre-registered evaluation running.
+- [flippy](https://github.com/promptcracka/flippy) — Multi-provider LLM failover router + agent harness (Loomweaver). Semantic cache (TF-IDF cosine), quota-aware routing with exponential cooldown, multi-key rotation, failure-injection tests. Stdlib-only core. 147 tests.
+- [dont-get-rekt](https://github.com/promptcracka/dont-get-rekt) — Crypto signal engine: multi-chain ingestion (Dexscreener/ccxt) → SQLite → LLM judge → paper trades. 30-day pre-registered evaluation running.
 - [verysketchy.lol](https://verysketchy.lol) — Memecoin exposure auction on Cloudflare Workers. On-chain payment verification across Solana/Ethereum/Base/Monad.
-- [just-hired](https://github.com/Rawbeew/just-hired) — Job ingestion: Cloudflare Worker cron → content-hash dedup → last-12h board + ATS resume builder.
+- [just-hired](https://github.com/promptcracka/just-hired) — Job ingestion: Cloudflare Worker cron → content-hash dedup → last-12h board + ATS resume builder.
 
 ## Stack
 
@@ -28,7 +28,7 @@ Most people treat LLMs as black-box APIs. Most NLP people don't ship working cod
 - Router core has **zero pip dependencies** — if it needs a framework to work, I redesign
 - Evaluation protocols commit success criteria **before results are known**
 - Agent tool restrictions enforced at dispatch, not suggested in prompts
-- Post-mortems written for real bugs found ([POSTMORTEMS.md](https://github.com/Rawbeew/flippy/blob/master/POSTMORTEMS.md))
+- Post-mortems written for real bugs found ([POSTMORTEMS.md](https://github.com/promptcracka/flippy/blob/master/POSTMORTEMS.md))
 
 ## Looking for
 
@@ -36,4 +36,4 @@ AI Engineer / LLM Application Engineer roles (remote). Teams building their LLM 
 
 ---
 
-[LLM.txt](https://raw.githubusercontent.com/Rawbeew/portfolio/master/LLM.txt)
+[LLM.txt](https://raw.githubusercontent.com/promptcracka/portfolio/master/LLM.txt)
