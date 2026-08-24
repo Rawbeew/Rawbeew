@@ -1,39 +1,33 @@
-# Raji Muhammed Robiu
+# promptcracka
 
-Computational linguist turned LLM systems engineer — I build free-tier-first, failure-aware routing and agent systems in pure Python.
+computational linguist turned llm systems engineer — i build free-tier-first, failure-aware routing and agent systems that stay reliable when individual providers don't.
 
-**B.A. Linguistics** (syntax, HCI, Computational Linguistics; AI thesis) · **Fortinet NSE 1–3** · **Cisco CyberOps**
+**B.A. Linguistics** (syntax, hci, computational linguistics; AI thesis) · **Fortinet NSE 1–3** · **Cisco CyberOps**
 
-## LLM Systems
+## what i build
 
-- [flippy](https://github.com/promptcracka/flippy) — Multi-provider LLM failover router + agent harness (Loomweaver). Semantic cache (TF-IDF cosine), quota-aware routing with exponential cooldown, multi-key rotation, failure-injection tests. Stdlib-only core. 147 tests.
-- [dont-get-rekt](https://github.com/promptcracka/dont-get-rekt) — Crypto signal engine: multi-chain ingestion (Dexscreener/ccxt) → SQLite → LLM judge → paper trades. 30-day pre-registered evaluation running.
-- [verysketchy.lol](https://verysketchy.lol) — Memecoin exposure auction on Cloudflare Workers. On-chain payment verification across Solana/Ethereum/Base/Monad.
-- [just-hired](https://github.com/promptcracka/just-hired) — Job ingestion: Cloudflare Worker cron → content-hash dedup → last-12h board + ATS resume builder.
+- [flippy](https://github.com/Rawbeew/flippy) — multi-provider llm failover router + agent harness. semantic cache, quota-aware routing, key rotation. stdlib-only core. 147 tests.
+- [dont-get-rekt](https://github.com/Rawbeew/dont-get-rekt) — crypto signal engine: multi-chain ingestion → sqlite → llm judge → paper trades. 30-day pre-registered evaluation running.
+- [verysketchy.lol](https://verysketchy.lol) — memecoin exposure auction on cloudflare workers. on-chain payments across solana/eth/base/monad.
+- [just-hired](https://github.com/Rawbeew/just-hired) — job ingestion: worker cron → sqlite dedup → last-12h board + ats resume builder.
 
-## Stack
+## stack
 
-| Layer | Technologies |
+| layer | technologies |
 |---|---|
-| Languages | Python, SQL, Bash, JavaScript |
-| Deployment | Docker, Cloudflare Workers, Netlify, GitHub Actions CI |
-| Data | SQLite (schema design, indexed queries, FK constraints) |
-| Security | SSRF guards, path jails, env stripping, key redaction, input validation |
-| Networking | Tailscale, WireGuard (basic), SSH |
+| languages | python, sql, bash, javascript |
+| deployment | docker, cloudflare workers, netlify, github actions ci |
+| data | sqlite (schema design, indexed queries, FK constraints) |
+| security | ssrf guards, path jails, env stripping, key redaction |
 
-## How I work differently
+## how i work differently
 
-Most people treat LLMs as black-box APIs. Most NLP people don't ship working code. I sit in the middle.
+- router core has **zero pip dependencies** — if it needs a framework to work, i redesign
+- evaluation protocols commit success criteria **before results are known**
+- post-mortems written for real bugs found ([POSTMORTEMS.md](https://github.com/Rawbeew/flippy/blob/master/POSTMORTEMS.md))
 
-- Router core has **zero pip dependencies** — if it needs a framework to work, I redesign
-- Evaluation protocols commit success criteria **before results are known**
-- Agent tool restrictions enforced at dispatch, not suggested in prompts
-- Post-mortems written for real bugs found ([POSTMORTEMS.md](https://github.com/promptcracka/flippy/blob/master/POSTMORTEMS.md))
+## find me
 
-## Looking for
-
-AI Engineer / LLM Application Engineer roles (remote). Teams building their LLM stack who need reliable routing, honest evaluation, and clean Python.
-
----
-
-[LLM.txt](https://raw.githubusercontent.com/promptcracka/portfolio/master/LLM.txt)
+- x/twitter: [@promptcracka](https://x.com/promptcracka)
+- youtube/tiktok/ig: [@promptkracka](https://youtube.com/@promptkracka)
+- github: [Rawbeew](https://github.com/Rawbeew)
