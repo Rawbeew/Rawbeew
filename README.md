@@ -11,9 +11,9 @@ Computational linguist building small language models for tasks where large ones
 - **Beyond the Mask** (in preparation) — adversarial authorship attribution: a multi-agent pipeline generates author-conditioned LLM mimicry at scale, then a fine-tuned classifier measures which stylometric features survive imitation by every model. Closed-loop: mapped human baselines → constrained generation → hijack/detection/repair evaluation.
 - **HuggingFace:** [Chaiir](https://huggingface.co/Chaiir) — open model + tokenizer + training script.
 
-## what I'm shipping now (Oct 2026)
+## what I'm shipping now (Nov 2026)
 
-- **flippy** — multi-provider LLM failover router + agent harness. Adaptive provider ordering (EWMA success/latency scoring), in-provider retry with backoff, quota ledger, multi-key rotation, TF-IDF semantic cache, hedged requests, OpenAI-compatible HTTP server, 9 security-guarded agent tools, multi-agent armada fleets, 5 eval suites including a multi-step agent benchmark. Stdlib-only core. 173 tests.
+- **flippy** — multi-provider LLM failover router + agent harness. Adaptive provider ordering (EWMA success/latency scoring), in-provider retry with backoff, quota ledger, multi-key rotation, TF-IDF semantic cache, hedged requests, OpenAI-compatible HTTP server, 14+ security-guarded agent tools, multi-agent armada fleets, 5 eval suites including a multi-step agent benchmark. Stdlib-only core. 327 tests.
 - **stylometric-slm** — the flagship artifact. See research above.
 - **dont-get-rekt** — crypto signal engine: multi-chain ingestion → sqlite → LLM judge → paper trades. 30-day pre-registered evaluation running.
 - **just-hired** — fresh-only direct-employer job board. Cloudflare Worker fetches Job Bank + UHN every 2h, last-12h only. Static site + ATS resume/cover-letter generator.
@@ -42,5 +42,7 @@ Computational linguist building small language models for tasks where large ones
 ## find me
 
 - github: [Rawbeew](https://github.com/Rawbeew)
+- portfolio: [rawbeew.github.io/portfolio](https://rawbeew.github.io/portfolio/)
 - huggingface: [Chaiir](https://huggingface.co/Chaiir)
+- X: [@promptkracka](https://x.com/promptkracka)
 - email: raji.rawbeew@gmail.com
